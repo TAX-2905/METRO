@@ -22,7 +22,7 @@ function getFormattedDate() {
 
 function drawHorizontallyCenteredText(ctx, text, centerX, y) {
     // Set the font before measuring
-    ctx.font = "600 45px 'IBM Plex Sans'";
+    ctx.font = "600 50px 'IBM Plex Sans'";
   
     // Measure the width of the text
     const textWidth = ctx.measureText(text).width;
@@ -47,7 +47,7 @@ function drawHorizontallyCenteredText(ctx, text, centerX, y) {
     });
   
     const loadFonts = () => {
-      return document.fonts.load("600 45px 'IBM Plex Sans'").then(() => document.fonts.ready);
+      return document.fonts.load("600 50px 'IBM Plex Sans'").then(() => document.fonts.ready);
     };
   
     return Promise.all([
@@ -64,7 +64,7 @@ function drawHorizontallyCenteredText(ctx, text, centerX, y) {
           ctx.drawImage(afternoonImg, 0, 0);
       }
   
-      ctx.font = "600 45px 'IBM Plex Sans', sans-serif";
+      ctx.font = "600 50px 'IBM Plex Sans', sans-serif";
       ctx.fillStyle = "black";
       drawHorizontallyCenteredText(ctx, day, 2565, 5555);
       ctx.fillText(date, 2359, 5650);
